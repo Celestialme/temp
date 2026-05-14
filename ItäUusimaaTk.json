@@ -23,7 +23,7 @@
         "description": "Näitä komentoja käytetään Käynnin yhteenveto-ikkunan ollessa auki. Muista tarkistaa Robotin ehdottamat kirjaukset.",
         "content": [
           {
-            "type": "horizontalTable",
+            "type": "horizontalTable3",
             "commands": [
               ["Tilastoi käynti 1", "Tilastoi käynti 2", "Tilastoi käynti 3", "Tilastoi käynti 4", "Tilastoi etävastaanotto 1", "Tilastoi etävastaanotto 2", "Tilastoi etävastaanotto 3", "Tilastoi etävastaanotto 4"],
               ["Tilastoi konsultaatio 1", "Tilastoi konsultaatio 2", "Tilastoi konsultaatio 3", "Tilastoi puhelu 1", "Tilastoi puhelu 2", "Tilastoi puhelu 3", "Tilastoi muu"]
