@@ -6,7 +6,7 @@
         "description": "Robotin avulla voit suorittaa käsillä olevan työvaiheen nopeammin. Komennot on jaettu aihealueittain.",
         "content": [
           {
-            "type": "horizontalTable23",
+            "type": "horizontalTable233",
             "commands": [
               ["Kopioi henkilötunnus2", "Kopioi potilaan ID", "Kopioi lääkelista", "Kopioi lääketaulukko"],
               ["Luo A-todistus", "Luo B-lausunto", "Luo C-lausunto", "Luo laboratoriolähete", "Luo viesti", "Viesti muistilistalle"]
