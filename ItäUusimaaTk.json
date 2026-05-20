@@ -1155,7 +1155,7 @@
       "_uuid": "1a908b96-281e-4013-8ca5-371152478045"
     },
     "Avaa maksusitoumus audiogrammi ja spirometria": {
-      "selite": "Avaa maksusitoumus audiogrammi ja spirometria-ohjeet.2222",
+      "selite": "Avaa maksusitoumus audiogrammi ja spirometria-ohjeet.2",
       "_argumentit": [
         {
           "task": "avaaPolku",

@@ -968,7 +968,7 @@
     "_commandName": "Lähete alaraajalaskimoiden ultraääni"
   },
   "4c75d693-4c93-480c-be59-ed7172224384": {
-    "selite": "Avaa maksusitoumus audiogrammi ja spirometria-ohjeet.2222",
+    "selite": "Avaa maksusitoumus audiogrammi ja spirometria-ohjeet.2",
     "_argumentit": [
       {
         "task": "avaaPolku",
