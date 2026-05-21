@@ -6,7 +6,7 @@
         "description": "Robotin avulla voit suorittaa käsillä olevan työvaiheen nopeammin. Komennot on jaettu aihealueittain.",
         "content": [
           {
-            "type": "horizontalTablesdsd",
+            "type": "horizontalTable",
             "commands": [
               ["Kopioi henkilötunnus2", "Kopioi potilaan ID", "Kopioi lääkelista", "Kopioi lääketaulukko"],
               ["Luo A-todistus", "Luo B-lausunto", "Luo C-lausunto", "Luo laboratoriolähete", "Luo viesti", "Viesti muistilistalle"]
@@ -46,7 +46,7 @@
         "description": "Voit luoda RADI-sovellukseen tehtäviä lähetteitä Robotin avulla. Muista tarkistaa Robotin ehdottamat kirjaukset.",
         "content": [
           {
-            "type": "horizontalTable",
+            "type": "horizontalTable232",
             "commands": [
               ["Lähete jalkaterän röntgen", "Lähete kantapään röntgen", "Lähete nilkan röntgen", "Lähete polven röntgen", "Lähete lonkan röntgen", "Lähete lantion röntgen", "Lähete lannerangan röntgen", "Lähete luuntiheysmittaus"],
               ["Lähete käden röntgen", "Lähete ranteen röntgen", "Lähete olkaluun röntgen", "Lähete olkanivelen röntgen", "Lähete kaularangan röntgen", "Lähete rintarangan röntgen", "Lähete thoraxin röntgen"]
