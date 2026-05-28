@@ -3,36 +3,19 @@
   "tabs": {
     "Lifecare-komennot": {
       "Lääkärien komennot": {
-        "description": "Robotin avulla voit suorittaa käsillä olevan työvaiheen nopeammin. Komennot on jaettu aihealueittain.",
+        "description": "Robotin2222 avulla voit suorittaa käsillä olevan työvaiheen nopeammin. Komennot on jaettu aihealueittain.",
         "content": [
           {
             "type": "horizontalTable",
             "commands": [
-              [
-                "Kopioi henkilötunnus2",
-                "Kopioi potilaan ID",
-                "Kopioi lääkelista",
-                "Kopioi lääketaulukko"
-              ],
-              [
-                "Luo A-todistus",
-                "Luo B-lausunto",
-                "Luo C-lausunto",
-                "Luo laboratoriolähete",
-                "Luo viesti",
-                "Viesti muistilistalle"
-              ]
+              ["Kopioi henkilötunnus2", "Kopioi potilaan ID", "Kopioi lääkelista", "Kopioi lääketaulukko"],
+              ["Luo A-todistus", "Luo B-lausunto", "Luo C-lausunto", "Luo laboratoriolähete", "Luo viesti", "Viesti muistilistalle"]
             ]
           },
           {
             "type": "table",
             "title": "Lääketarkistukset",
-            "commands": [
-              "Lääketarkistus munuaisten vajaatoiminta",
-              "Lääketarkistus interaktiot ja haitat",
-              "Lääketarkistus raskaus ja imetys",
-              "Lääketarkistus maksasairaus"
-            ]
+            "commands": ["Lääketarkistus munuaisten vajaatoiminta", "Lääketarkistus interaktiot ja haitat", "Lääketarkistus raskaus ja imetys", "Lääketarkistus maksasairaus"]
           }
         ]
       },
@@ -42,46 +25,19 @@
           {
             "type": "horizontalTable",
             "commands": [
-              [
-                "Tilastoi käynti 1",
-                "Tilastoi käynti 2",
-                "Tilastoi käynti 3",
-                "Tilastoi käynti 4",
-                "Tilastoi etävastaanotto 1",
-                "Tilastoi etävastaanotto 2",
-                "Tilastoi etävastaanotto 3",
-                "Tilastoi etävastaanotto 4"
-              ],
-              [
-                "Tilastoi konsultaatio 1",
-                "Tilastoi konsultaatio 2",
-                "Tilastoi konsultaatio 3",
-                "Tilastoi puhelu 1",
-                "Tilastoi puhelu 2",
-                "Tilastoi puhelu 3",
-                "Tilastoi muu"
-              ]
+              ["Tilastoi käynti 1", "Tilastoi käynti 2", "Tilastoi käynti 3", "Tilastoi käynti 4", "Tilastoi etävastaanotto 1", "Tilastoi etävastaanotto 2", "Tilastoi etävastaanotto 3", "Tilastoi etävastaanotto 4"],
+              ["Tilastoi konsultaatio 1", "Tilastoi konsultaatio 2", "Tilastoi konsultaatio 3", "Tilastoi puhelu 1", "Tilastoi puhelu 2", "Tilastoi puhelu 3", "Tilastoi muu"]
             ]
           },
           {
             "type": "table",
-            "commands": [
-              "Tilastoi tapaturma"
-            ]
+            "commands": ["Tilastoi tapaturma"]
           },
           {
             "type": "horizontalTable",
             "commands": [
-              [
-                "Tilastoi asianhoito 1",
-                "Tilastoi asianhoito 2",
-                "Tilastoi peruuttamaton poisjäänti"
-              ],
-              [
-                "Tilastoi ajokortti",
-                "Tilastoi lausunto",
-                "Poista käyntimaksu"
-              ]
+              ["Tilastoi asianhoito 1", "Tilastoi asianhoito 2", "Tilastoi peruuttamaton poisjäänti"],
+              ["Tilastoi ajokortti", "Tilastoi lausunto", "Poista käyntimaksu"]
             ]
           }
         ]
@@ -92,42 +48,15 @@
           {
             "type": "horizontalTable",
             "commands": [
-              [
-                "Lähete jalkaterän röntgen",
-                "Lähete kantapään röntgen",
-                "Lähete nilkan röntgen",
-                "Lähete polven röntgen",
-                "Lähete lonkan röntgen",
-                "Lähete lantion röntgen",
-                "Lähete lannerangan röntgen",
-                "Lähete luuntiheysmittaus"
-              ],
-              [
-                "Lähete käden röntgen",
-                "Lähete ranteen röntgen",
-                "Lähete olkaluun röntgen",
-                "Lähete olkanivelen röntgen",
-                "Lähete kaularangan röntgen",
-                "Lähete rintarangan röntgen",
-                "Lähete thoraxin röntgen"
-              ]
+              ["Lähete jalkaterän röntgen", "Lähete kantapään röntgen", "Lähete nilkan röntgen", "Lähete polven röntgen", "Lähete lonkan röntgen", "Lähete lantion röntgen", "Lähete lannerangan röntgen", "Lähete luuntiheysmittaus"],
+              ["Lähete käden röntgen", "Lähete ranteen röntgen", "Lähete olkaluun röntgen", "Lähete olkanivelen röntgen", "Lähete kaularangan röntgen", "Lähete rintarangan röntgen", "Lähete thoraxin röntgen"]
             ]
           },
           {
             "type": "horizontalTable",
             "commands": [
-              [
-                "Lähete mammografia",
-                "Lähete mammografia + ultraääni",
-                "Lähete rintojen ultraääni",
-                "Lähete kaulan ultraääni"
-              ],
-              [
-                "Lähete vatsan ultraääni",
-                "Lähete virtsaelinten ultraääni",
-                "Lähete kivespussin ultraääni",
-                "Lähete alaraajalaskimoiden ultraääni"
-              ]
+              ["Lähete mammografia", "Lähete mammografia + ultraääni", "Lähete rintojen ultraääni", "Lähete kaulan ultraääni"],
+              ["Lähete vatsan ultraääni", "Lähete virtsaelinten ultraääni", "Lähete kivespussin ultraääni", "Lähete alaraajalaskimoiden ultraääni"]
             ]
           }
         ]
@@ -139,20 +68,7 @@
         "content": [
           {
             "type": "table",
-            "commands": [
-              "Avaa maksusitoumus audiogrammi ja spirometria",
-              "Avaa antibioottilaskuri",
-              "Avaa BMI-laskuri",
-              "Avaa CHA2DS2-VASc laskuri",
-              "Avaa CIWA-Ar-laskuri",
-              "Avaa FIB4-laskuri",
-              "Avaa FINRISKI-laskuri",
-              "Avaa FRAX-laskuri",
-              "Avaa HAS-BLED-laskuri",
-              "Avaa ISO-BMI-laskuri",
-              "Avaa reseptilaskuri",
-              "Avaa TTR-laskuri"
-            ]
+            "commands": ["Avaa maksusitoumus audiogrammi ja spirometria", "Avaa antibioottilaskuri", "Avaa BMI-laskuri", "Avaa CHA2DS2-VASc laskuri", "Avaa CIWA-Ar-laskuri", "Avaa FIB4-laskuri", "Avaa FINRISKI-laskuri", "Avaa FRAX-laskuri", "Avaa HAS-BLED-laskuri", "Avaa ISO-BMI-laskuri", "Avaa reseptilaskuri", "Avaa TTR-laskuri"]
           }
         ]
       },
@@ -161,21 +77,7 @@
         "content": [
           {
             "type": "table",
-            "commands": [
-              "Avaa AUDIT-kysely",
-              "Avaa astmatesti",
-              "Avaa BDI-kysely",
-              "Avaa CAT-testi",
-              "Avaa C-lausunnon esitietolomake",
-              "Avaa DAN-PSS-kysely",
-              "Avaa GAD-7-kysely",
-              "Avaa GDS-kysely",
-              "Avaa IADL-kysely",
-              "Avaa MADRS-kysely",
-              "Avaa MDQ-kysely",
-              "Avaa PHQ-9-kysely",
-              "Avaa START-kysely"
-            ]
+            "commands": ["Avaa AUDIT-kysely", "Avaa astmatesti", "Avaa BDI-kysely", "Avaa CAT-testi", "Avaa C-lausunnon esitietolomake", "Avaa DAN-PSS-kysely", "Avaa GAD-7-kysely", "Avaa GDS-kysely", "Avaa IADL-kysely", "Avaa MADRS-kysely", "Avaa MDQ-kysely", "Avaa PHQ-9-kysely", "Avaa START-kysely"]
           }
         ]
       },
@@ -184,11 +86,7 @@
         "content": [
           {
             "type": "table",
-            "commands": [
-              "Hae Terveysportista",
-              "Hae Lääketietokannasta",
-              "Hae diagnoosia"
-            ]
+            "commands": ["Hae Terveysportista", "Hae Lääketietokannasta", "Hae diagnoosia"]
           }
         ]
       }
@@ -206,9 +104,7 @@
     },
     "Kopioi lääkelista": {
       "selite": "Kopioi lääkelistan leikepöydälle tekstinä.",
-      "_swedish": [
-        "Kopiera läkemedelslista"
-      ],
+      "_swedish": ["Kopiera läkemedelslista"],
       "_argumentit": [
         {
           "task": "KopioiLääkitysTaulukosta",
@@ -219,9 +115,7 @@
     },
     "Kopioi lääketaulukko": {
       "selite": "Kopioi lääkelistan leikepöydälle taulukkona.",
-      "_swedish": [
-        "Kopiera läkemedelstabell"
-      ],
+      "_swedish": ["Kopiera läkemedelstabell"],
       "_argumentit": [
         {
           "task": "KopioiLääkitysTaulukosta",
@@ -233,10 +127,7 @@
       "_uuid": "c843098b-6675-4c44-8088-d85e33ab167a"
     },
     "Luo A-todistus": {
-      "_synonyms": [
-        "Luo SVA",
-        "Luo sairaslomatodistus"
-      ],
+      "_synonyms": ["Luo SVA", "Luo sairaslomatodistus"],
       "selite": "Luo uuden A-todistuksen.",
       "_argumentit": [
         {
@@ -249,9 +140,7 @@
       "_uuid": "8ee172cb-35a9-42ad-9ff5-ffb36f9157cc"
     },
     "Luo B-lausunto": {
-      "_synonyms": [
-        "Luo B-todistus"
-      ],
+      "_synonyms": ["Luo B-todistus"],
       "selite": "Luo uuden B-todistuksen.",
       "_argumentit": [
         {
@@ -264,9 +153,7 @@
       "_uuid": "6323a768-2e9b-4e63-ba59-4f6189cdff35"
     },
     "Luo C-lausunto": {
-      "_synonyms": [
-        "Luo C-todistus"
-      ],
+      "_synonyms": ["Luo C-todistus"],
       "selite": "Luo uuden C-todistuksen.",
       "_argumentit": [
         {
@@ -279,9 +166,7 @@
       "_uuid": "b9b5b7df-ddec-434d-b8d1-d97363e373fe"
     },
     "Luo laboratoriolähete": {
-      "_synonyms": [
-        "Luo labralähete"
-      ],
+      "_synonyms": ["Luo labralähete"],
       "selite": "Avaa laboratoriolähete-sovelluksen.",
       "_argumentit": [
         {
@@ -314,9 +199,7 @@
     },
     "Lääketarkistus munuaisten vajaatoiminta": {
       "selite": "Syöttää potilaan lääkityksen Terveysportin Lääkkeet ja munuaiset -työkaluun.",
-      "_swedish": [
-        "Läkemedelskontroll njursvikt"
-      ],
+      "_swedish": ["Läkemedelskontroll njursvikt"],
       "_argumentit": [
         {
           "task": "TerveysporttiRenbase",
@@ -327,9 +210,7 @@
     },
     "Lääketarkistus interaktiot ja haitat": {
       "selite": "Syöttää potilaan lääkityksen Terveysportin Lääkeinteraktiot ja -haitat -työkaluun.",
-      "_swedish": [
-        "Läkemedelskontroll interaktioner och biverkningar"
-      ],
+      "_swedish": ["Läkemedelskontroll interaktioner och biverkningar"],
       "_argumentit": [
         {
           "task": "TerveysporttiInteraktiotJaHaitat",
@@ -340,9 +221,7 @@
     },
     "Lääketarkistus raskaus ja imetys": {
       "selite": "Syöttää potilaan lääkityksen Terveysportin Lääkkeet raskauden ja imetyksen aikana -työkaluun.",
-      "_swedish": [
-        "Läkemedelskontroll graviditet och amning"
-      ],
+      "_swedish": ["Läkemedelskontroll graviditet och amning"],
       "_argumentit": [
         {
           "task": "TerveysporttiRaskausJaImetys",
@@ -353,9 +232,7 @@
     },
     "Lääketarkistus maksasairaus": {
       "selite": "Syöttää potilaan lääkityksen Terveysportin Lääkkeet ja maksa -työkaluun.",
-      "_swedish": [
-        "Läkemedelskontroll leversjukdom"
-      ],
+      "_swedish": ["Läkemedelskontroll leversjukdom"],
       "_argumentit": [
         {
           "task": "TerveysporttiHeparbase",
@@ -813,9 +690,7 @@
       "_uuid": "95f2611c-183f-4d1a-aa0f-6e456ec8e71b"
     },
     "Tilastoi ajokortti": {
-      "_synonyms": [
-        "Tilastoi ajokorttitodistus"
-      ],
+      "_synonyms": ["Tilastoi ajokorttitodistus"],
       "laskutus": "Ajokorttitodistus",
       "_argumentit": [
         {
@@ -833,10 +708,7 @@
       "_uuid": "cb0bb234-c07c-48a0-a21d-dbd185f465a6"
     },
     "Tilastoi lausunto": {
-      "_synonyms": [
-        "Tilastoi B-lausunto",
-        "Tilastoi C-lausunto"
-      ],
+      "_synonyms": ["Tilastoi B-lausunto", "Tilastoi C-lausunto"],
       "laskutus": "Lääkärinlausunto",
       "_argumentit": [
         {
