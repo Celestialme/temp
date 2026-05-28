@@ -1320,5 +1320,721 @@
       }
     ],
     "_commandName": "Hae diagnoosia"
+  },
+  "9a7577fb-bc2f-4022-98ec-3a96b82930ee": {
+    "_synonyms": [
+      "Tilastoi hoipuh"
+    ],
+    "kontaktilaji": "4 Puhelu",
+    "vastaanottolaji": "HOIPUH",
+    "_argumentit": [
+      {
+        "task": "KontaktitietojenLisäys",
+        "parameters": {
+          "kontaktilaji": "4",
+          "vastaanottolaji": "HOIPUH"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi puhelu"
+  },
+  "5bc313a6-b488-4f55-a1a5-31e23696f4ce": {
+    "kontaktilaji": "9d Konsultaatio",
+    "vastaanottolaji": "LKONS",
+    "_argumentit": [
+      {
+        "task": "KontaktitietojenLisäys",
+        "parameters": {
+          "kontaktilaji": "9d",
+          "vastaanottolaji": "LKONS"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi konsultaatio"
+  },
+  "d4bc66b0-1bc0-43f4-89e6-e71b1f1f3263": {
+    "käyntityyppi": "4 Työtapaturma",
+    "_argumentit": [
+      {
+        "task": "KontaktitietojenLisäys",
+        "parameters": {
+          "käyntityyppi": "4"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi työtapaturma"
+  },
+  "c24704b7-a9a9-48c0-b36c-11bb06d6245d": {
+    "käyntityyppi": "5 Liikennetapaturma",
+    "_argumentit": [
+      {
+        "task": "KontaktitietojenLisäys",
+        "parameters": {
+          "käyntityyppi": "5"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi liikennetapaturma"
+  },
+  "7d3abc72-29ac-415e-9e5a-a7aff1f8210f": {
+    "kontaktilaji": "9 Muu",
+    "_argumentit": [
+      {
+        "task": "KontaktitietojenLisäys",
+        "parameters": {
+          "kontaktilaji": "9"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi muu"
+  },
+  "62d827cd-07a1-4ba2-9486-19651886f283": {
+    "kontaktilaji": "9a Sähköinen palvelukanava",
+    "vastaanottolaji": "ETÄVAS",
+    "_argumentit": [
+      {
+        "task": "KontaktitietojenLisäys",
+        "parameters": {
+          "kontaktilaji": "9a",
+          "vastaanottolaji": "ETÄVAS"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi etävastaanotto"
+  },
+  "51daf8de-f936-4b29-be47-fdcb3259124d": {
+    "kontaktilaji": "9b Sähköposti",
+    "vastaanottolaji": "LKONS",
+    "_argumentit": [
+      {
+        "task": "KontaktitietojenLisäys",
+        "parameters": {
+          "kontaktilaji": "9b",
+          "vastaanottolaji": "LKONS"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi tekstiviesti"
+  },
+  "95f524ab-5fb9-43fa-a60d-a3ee922ce132": {
+    "kontaktilaji": "1 Käynti",
+    "vastaanottolaji": "KIVA",
+    "kiireellisyys": "5 Hoito akuutti- tai kiirevastaanotolla",
+    "_argumentit": [
+      {
+        "task": "KontaktitietojenLisäys",
+        "parameters": {
+          "kontaktilaji": "1",
+          "vastaanottolaji": "KIVA",
+          "kiireellisyys": "5"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi kiva"
+  },
+  "ad96c6ae-bcf3-4be4-a2da-f47f7fdcd42c": {
+    "_synonyms": [
+      "Tilastoi kiireellinen konsu"
+    ],
+    "kontaktilaji": "1 Käynti",
+    "vastaanottolaji": "KONSU",
+    "kiireellisyys": "5 Hoito akuutti- tai kiirevastaanotolla",
+    "_argumentit": [
+      {
+        "task": "KontaktitietojenLisäys",
+        "parameters": {
+          "kontaktilaji": "1",
+          "vastaanottolaji": "KONSU",
+          "kiireellisyys": "5"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi kiirekonsu"
+  },
+  "56a517d8-1313-4c82-bd1d-f613aab36e3d": {
+    "_synonyms": [
+      "Tilastoi kiireellinen konsultaatio"
+    ],
+    "kontaktilaji": "9d Konsultaatio",
+    "vastaanottolaji": "LKONS",
+    "kiireellisyys": "5 Hoito akuutti- tai kiirevastaanotolla",
+    "_argumentit": [
+      {
+        "task": "KontaktitietojenLisäys",
+        "parameters": {
+          "kontaktilaji": "9d",
+          "vastaanottolaji": "LKONS",
+          "kiireellisyys": "5"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi kiire konsultaatio"
+  },
+  "334e64bf-6571-41ce-9e6d-09a9c87dd2b6": {
+    "_synonyms": [
+      "Tilastoi ajokorttitodistus"
+    ],
+    "laskutus": "Ajokorttitodistus",
+    "_argumentit": [
+      {
+        "task": "LisääLaskutettavaTuote",
+        "parameters": {
+          "tuotteentyyppi": "a",
+          "tuotteentunnus": "AJOKO"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi ajokortti"
+  },
+  "8b0c3dc7-fa56-4734-afdf-883282a37002": {
+    "_synonyms": [
+      "Tilastoi B-todistus"
+    ],
+    "laskutus": "B-todistus",
+    "_argumentit": [
+      {
+        "task": "LisääLaskutettavaTuote",
+        "parameters": {
+          "tuotteentyyppi": "a",
+          "tuotteentunnus": "B-TOD"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi B-lausunto"
+  },
+  "33b7f3e5-c3c2-4e68-859d-d69214421f92": {
+    "_synonyms": [
+      "Tilastoi C-todistus"
+    ],
+    "laskutus": "C-todistus",
+    "_argumentit": [
+      {
+        "task": "LisääLaskutettavaTuote",
+        "parameters": {
+          "tuotteentyyppi": "a",
+          "tuotteentunnus": "C-TOD"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi C-lausunto"
+  },
+  "d6e0abcc-cef3-4cc8-9965-3622d48d8e88": {
+    "_synonyms": [
+      "Tilastoi T-todistus"
+    ],
+    "laskutus": "T-todistus",
+    "_argumentit": [
+      {
+        "task": "LisääLaskutettavaTuote",
+        "parameters": {
+          "tuotteentyyppi": "a",
+          "tuotteentunnus": "T-TOD"
+        }
+      }
+    ],
+    "_commandName": "Tilastoi T-lausunto"
+  },
+  "ebebcac6-19fc-4505-bf23-af40cb75cbba": {
+    "selite": "Avaa NeaLinkistä viimeisimmät 5 EKG:ta sekä vanhimman EKG:n.",
+    "_argumentit": [
+      {
+        "task": "AvaaNeaLinkEKG",
+        "parameters": {
+          "valitseJaAvaa": "true"
+        }
+      }
+    ],
+    "_commandName": "Avaa EKG"
+  },
+  "527876e3-f26b-4290-8a63-18e14858256c": {
+    "selite": "Avaa määräykset.",
+    "_argumentit": [
+      {
+        "task": "PotilaskansionSovellusAvaus",
+        "parameters": {
+          "sovellus": "Määräykset"
+        }
+      }
+    ],
+    "_commandName": "Avaa määräykset"
+  },
+  "634e7016-c9b2-4b88-9b0b-b403788a02d7": {
+    "selite": "Avaa viimeisimmän hoitojakson hoitokertomuksen.",
+    "_argumentit": [
+      {
+        "task": "AvaaUusinHoitokertomus",
+        "parameters": {}
+      }
+    ],
+    "_commandName": "Avaa hoitokertomus"
+  },
+  "0aa71e75-f589-4449-ad9c-68ce51fd6183": {
+    "_synonyms": [
+      "Lähetä tekstiviesti",
+      "Avaa tekstiviestit"
+    ],
+    "selite": "Avaa Tekstiviesti potilaalle-sovelluksen.",
+    "_argumentit": [
+      {
+        "task": "PotilaskansionSovellusAvaus",
+        "parameters": {
+          "sovellus": "Tekstiviesti potilaalle"
+        }
+      }
+    ],
+    "_commandName": "Luo tekstiviesti"
+  },
+  "ff668f9c-9f67-4967-af02-20107ee1c2f7": {
+    "selite": "Luo uuden laboratoriolähetteen.",
+    "_argumentit": [
+      {
+        "task": "PotilaskansionSovellusAvaus",
+        "parameters": {
+          "sovellus": "Lab - Lähete"
+        }
+      }
+    ],
+    "_commandName": "Luo laboratoriolähete"
+  },
+  "f20cf9d3-c85e-4b70-a24f-bc88ebfe3f30": {
+    "selite": "Luo uuden PAD-lähetteen.",
+    "_argumentit": [
+      {
+        "task": "PotilaskansionSovellusAvaus",
+        "parameters": {
+          "sovellus": "Lab - Lähete (Pat)"
+        }
+      }
+    ],
+    "_commandName": "Luo PAD-lähete"
+  },
+  "1d26ebbc-f487-43b4-8160-1dfbb111da35": {
+    "selite": "Kopioi potilaan henkilötunnus leikepöydälle.",
+    "_argumentit": [
+      {
+        "task": "KopioiHenkilötunnus",
+        "parameters": {}
+      }
+    ],
+    "_commandName": "Kopioi henkilötunnus"
+  },
+  "32e6fef8-5cbc-4c29-a751-6d495c699023": {
+    "selite": "Kopioi potilaan ID:n leikepöydälle.",
+    "_argumentit": [
+      {
+        "task": "KopioiPotilaanID",
+        "parameters": {}
+      }
+    ],
+    "_commandName": "Kopioi potilaan ID"
+  },
+  "9de1200d-abcf-458e-bd28-2c24fd873314": {
+    "selite": "Kopioi lääkelistan leikepöydälle tekstinä.",
+    "_argumentit": [
+      {
+        "task": "KopioiLääkitys",
+        "parameters": {
+          "tyyppi": "teksti"
+        }
+      }
+    ],
+    "_commandName": "Kopioi lääkelista"
+  },
+  "2005bbc5-3d38-44e7-9054-85c5cf958fde": {
+    "selite": "Kopioi lääkelistan leikepöydälle taulukkona.",
+    "_argumentit": [
+      {
+        "task": "KopioiLääkitys",
+        "parameters": {
+          "tyyppi": "taulukko"
+        }
+      }
+    ],
+    "_commandName": "Kopioi lääketaulukko"
+  },
+  "dea12ad3-2fae-455f-8829-7bead76749bc": {
+    "selite": "Kopioi lääkelistan tekstinä ja liittää kertomustekstiin.",
+    "_argumentit": [
+      {
+        "task": "KopioiJaKirjaaLääkitys",
+        "parameters": {
+          "tyyppi": "teksti"
+        }
+      }
+    ],
+    "_commandName": "Liitä lääkelista"
+  },
+  "b5c02905-31db-43e6-b2f8-00f4ba86cce8": {
+    "selite": "Kopioi lääkelistan taulukkona ja liittää kertomustekstiin.",
+    "_argumentit": [
+      {
+        "task": "KopioiJaKirjaaLääkitys",
+        "parameters": {
+          "tyyppi": "taulukko"
+        }
+      }
+    ],
+    "_commandName": "Liitä lääketaulukko"
+  },
+  "e479c673-7c63-4cb0-91ea-baab873935cb": {
+    "selite": "Luo uuden Lifecare-viestin potilaasta.",
+    "_argumentit": [
+      {
+        "task": "LifecareViestinLuonti",
+        "parameters": {}
+      }
+    ],
+    "_commandName": "Luo viesti"
+  },
+  "2d420752-a5ed-4454-85cc-7e4c17eb1870": {
+    "selite": "Luo uuden määräyksen.",
+    "_argumentit": [
+      {
+        "task": "LisääMääräys",
+        "parameters": {
+          "teksti": " "
+        }
+      }
+    ],
+    "_commandName": "Luo määräys"
+  },
+  "0dce79b2-2bab-43c5-a487-4ef079d871b1": {
+    "_synonyms": [
+      "Luo SVA"
+    ],
+    "selite": "Luo uuden A-todistuksen.",
+    "_argumentit": [
+      {
+        "task": "LisääLomakeTaiFraasi",
+        "parameters": {
+          "hakutermi": "A-TODI"
+        }
+      }
+    ],
+    "_commandName": "Luo sairaslomatodistus"
+  },
+  "55be1f49-b767-45ce-8271-2f277595d043": {
+    "selite": "Luo uuden B-todistuksen.",
+    "_argumentit": [
+      {
+        "task": "LisääLomakeTaiFraasi",
+        "parameters": {
+          "hakutermi": "B-LAU"
+        }
+      }
+    ],
+    "_commandName": "Luo B-lausunto"
+  },
+  "040edbba-b1ae-4f99-ba5c-93edb97bc01b": {
+    "selite": "Luo uuden C-todistuksen.",
+    "_argumentit": [
+      {
+        "task": "LisääLomakeTaiFraasi",
+        "parameters": {
+          "hakutermi": "CLAUSU"
+        }
+      }
+    ],
+    "_commandName": "Luo C-lausunto"
+  },
+  "fa914d50-9add-4239-8b95-3d5db724bdb3": {
+    "selite": "Luo uuden AJOKYV-lomakkeen.",
+    "_argumentit": [
+      {
+        "task": "LisääLomakeTaiFraasi",
+        "parameters": {
+          "hakutermi": "AJOKYV"
+        }
+      }
+    ],
+    "_commandName": "Luo ajokorttitodistus"
+  },
+  "57de1c99-e30d-42c5-8775-0c24a8e260ff": {
+    "selite": "Tutkimuksen koodi: NH3AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NH3AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete jalkaterän röntgen"
+  },
+  "fde18c81-9972-4b05-9f37-19873fbb5fda": {
+    "selite": "Tutkimuksen koodi: ND2AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "ND2AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete käden röntgen"
+  },
+  "7c7b0aa9-2fb3-4640-b08a-131f4a9a8bcf": {
+    "selite": "Tutkimuksen koodi: NH2AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NH2AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete kantapään röntgen"
+  },
+  "1806caba-15c9-45a7-9034-0960db05055d": {
+    "selite": "Tutkimuksen koodi: NA1AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NA1AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete kaularangan röntgen"
+  },
+  "a7e7713b-fd5c-4fea-b9bc-6deffeab68cc": {
+    "selite": "Tutkimuksen koodi: NA3AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NA3AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete lannerangan röntgen"
+  },
+  "bc0e7bf1-7c2f-4659-b7b9-7539423f51ef": {
+    "selite": "Tutkimuksen koodi: NE1AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NE1AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete lantion röntgen"
+  },
+  "782110e6-64d6-4f4c-b8e8-e16803ee39e5": {
+    "selite": "Tutkimuksen koodi: NF1AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NF1AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete lonkan röntgen"
+  },
+  "b57a1f8e-9d3e-47a2-a7d6-86ac8acce58c": {
+    "selite": "Tutkimuksen koodi: NK6QA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NK6QA"
+        }
+      }
+    ],
+    "_commandName": "Lähete luuntiheysmittaus"
+  },
+  "4831ffe4-e86b-4fa2-ae4a-7fd35098fd19": {
+    "selite": "Tutkimuksen koodi: HA1BA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "HA1BA"
+        }
+      }
+    ],
+    "_commandName": "Lähete mammografia"
+  },
+  "4b2b64ff-d9cf-4d3e-a245-aa7abb755be8": {
+    "selite": "Tutkimuksen koodi: NH1AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NH1AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete nilkan röntgen"
+  },
+  "784ee352-cf2b-40ca-bcf5-39022c581409": {
+    "selite": "Tutkimuksen koodi: NB1BA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NB1BA"
+        }
+      }
+    ],
+    "_commandName": "Lähete olkaluun röntgen"
+  },
+  "31cf760d-4d26-4ab5-af2b-b7293a5d9eaa": {
+    "selite": "Tutkimuksen koodi: NB1AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NB1AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete olkanivelen röntgen"
+  },
+  "239ccda5-b410-4c56-956e-a37e10d0dfd7": {
+    "selite": "Tutkimuksen koodi: NG1AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NG1AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete polven röntgen"
+  },
+  "ac4b461b-f77f-49c6-85b5-45c655525c85": {
+    "selite": "Tutkimuksen koodi: ND1AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "ND1AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete ranteen röntgen"
+  },
+  "943ddfbd-9059-4abe-a408-58f59fd86cfd": {
+    "selite": "Tutkimuksen koodi: NA2AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "NA2AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete rintarangan röntgen"
+  },
+  "440d6816-c762-4b65-bd60-252e8a42b6ad": {
+    "selite": "Tutkimuksen koodi: GD1AA",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "GD1AA"
+        }
+      }
+    ],
+    "_commandName": "Lähete thoraxin röntgen"
+  },
+  "2d4e0e9e-7c80-4bd6-8576-19d70212b705": {
+    "selite": "Tutkimuksen koodi: PH2AE",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "PH2AE"
+        }
+      }
+    ],
+    "_commandName": "Lähete alaraajalaskimoiden ultraääni"
+  },
+  "dcdf15fc-4917-46a0-8ed0-149d46211d24": {
+    "selite": "Tutkimuksen koodi: EP1AE",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "EP1AE"
+        }
+      }
+    ],
+    "_commandName": "Lähete kaulan ultraääni"
+  },
+  "974f4d64-1328-4f1b-8361-68904d028b51": {
+    "selite": "Tutkimuksen koodi: KF8AE",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "KF8AE"
+        }
+      }
+    ],
+    "_commandName": "Lähete kivespussin ultraääni"
+  },
+  "85c3f36d-b6ad-4ba1-a116-93d6ede10d78": {
+    "selite": "Tutkimuksen koodi: JN3AE",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "JN3AE"
+        }
+      }
+    ],
+    "_commandName": "Lähete vatsan ultraääni"
+  },
+  "500e5d41-ad1d-4e75-8c0c-0d023341388f": {
+    "selite": "Tutkimuksen koodi: KH1AE",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "KH1AE"
+        }
+      }
+    ],
+    "_commandName": "Lähete virtsaelinten ultraääni"
+  },
+  "e2342b60-00f0-4fd5-bd68-eafd8c795b4a": {
+    "selite": "Laaja ENMG-tutkimus. Tutkimuksen koodi: 4921",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "4921"
+        }
+      }
+    ],
+    "_commandName": "Lähete ENMG laaja"
+  },
+  "28d659dd-8069-4f5a-9bea-b59f316bec82": {
+    "selite": "Yhden raajan ENMG. Tutkimuksen koodi: 1302",
+    "_argumentit": [
+      {
+        "task": "RöntgenLähetteenKirjaus",
+        "parameters": {
+          "tutkimus": "1302"
+        }
+      }
+    ],
+    "_commandName": "Lähete ENMG"
+  },
+  "47b12e12-f7e8-462c-87a3-c54cd2dda3da": {
+    "selite": "Mini-Mental State Examination on lyhyt muistin ja tiedonkäsittelyn arviointiin tarkoitettu testi.",
+    "_argumentit": [
+      {
+        "task": "avaaEdgeApp",
+        "parameters": {
+          "url": "https://www.terveysportti.fi/xmedia/pgr/100.005.html"
+        }
+      }
+    ],
+    "_commandName": "Avaa MMSE-testi"
   }
 }

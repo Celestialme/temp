@@ -1,0 +1,1248 @@
+{
+  "$schema": "../schema.json",
+  "tabs": {
+    "Lifecare-komennot": {
+      "Lääkärien komennot": {
+        "description": "Robotin avulla voit suorittaa käsillä olevan työvaiheen nopeammin. Komennot on jaettu aihealueittain.",
+        "content": [
+          {
+            "type": "horizontalTable",
+            "commands": [
+              [
+                "Avaa EKG",
+                "Avaa määräykset",
+                "Avaa hoitokertomus",
+                "Luo sairaslomatodistus",
+                "Luo B-lausunto",
+                "Luo C-lausunto",
+                "Luo ajokorttitodistus",
+                "Kopioi henkilötunnus",
+                "Kopioi potilaan ID"
+              ],
+              [
+                "Kopioi lääkelista",
+                "Kopioi lääketaulukko",
+                "Luo määräys",
+                "Luo tekstiviesti",
+                "Luo laboratoriolähete",
+                "Luo PAD-lähete",
+                "Luo viesti",
+                "Viesti muistilistalle"
+              ]
+            ]
+          }
+        ]
+      },
+      "Tilastointi": {
+        "description": "Näitä komentoja käytetään Käynnin yhteenveto-ikkunan ollessa auki. Muista tarkistaa Robotin ehdottamat kirjaukset.",
+        "content": [
+          {
+            "type": "horizontalTable",
+            "commands": [
+              [
+                "Tilastoi puhelu",
+                "Tilastoi konsultaatio",
+                "Tilastoi muu",
+                "Tilastoi etävastaanotto",
+                "Tilastoi tekstiviesti",
+                "Tilastoi työtapaturma",
+                "Tilastoi liikennetapaturma"
+              ],
+              [
+                "Tilastoi ajokortti",
+                "Tilastoi B-lausunto",
+                "Tilastoi C-lausunto",
+                "Tilastoi T-lausunto"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "commands": [
+              "Tilastoi kiva",
+              "Tilastoi kiirekonsu",
+              "Tilastoi kiire konsultaatio"
+            ]
+          }
+        ]
+      },
+      "RADI-lähetteet": {
+        "description": "Voit luoda RADI-sovellukseen tehtäviä lähetteitä Robotin avulla. Muista tarkistaa Robotin ehdottamat kirjaukset.",
+        "content": [
+          {
+            "type": "horizontalTable",
+            "commands": [
+              [
+                "Lähete jalkaterän röntgen",
+                "Lähete käden röntgen",
+                "Lähete kantapään röntgen",
+                "Lähete kaularangan röntgen",
+                "Lähete lannerangan röntgen",
+                "Lähete lantion röntgen",
+                "Lähete lonkan röntgen",
+                "Lähete luuntiheysmittaus"
+              ],
+              [
+                "Lähete mammografia",
+                "Lähete nilkan röntgen",
+                "Lähete olkaluun röntgen",
+                "Lähete olkanivelen röntgen",
+                "Lähete polven röntgen",
+                "Lähete ranteen röntgen",
+                "Lähete rintarangan röntgen",
+                "Lähete thoraxin röntgen"
+              ]
+            ]
+          },
+          {
+            "type": "horizontalTable",
+            "commands": [
+              [
+                "Lähete ENMG",
+                "Lähete ENMG laaja"
+              ],
+              [
+                "Lähete alaraajalaskimoiden ultraääni",
+                "Lähete kaulan ultraääni",
+                "Lähete kivespussin ultraääni",
+                "Lähete vatsan ultraääni",
+                "Lähete virtsaelinten ultraääni"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "Laskurit ja linkit": {
+      "Laskurit": {
+        "description": "Lääkärien usein käyttämiä laskureita.",
+        "content": [
+          {
+            "type": "table",
+            "commands": [
+              "Avaa antibioottilaskuri",
+              "Avaa BMI-laskuri",
+              "Avaa CHA2DS2-VASc laskuri",
+              "Avaa CIWA-Ar-laskuri",
+              "Avaa FIB4-laskuri",
+              "Avaa FINRISKI-laskuri",
+              "Avaa FRAX-laskuri",
+              "Avaa HAS-BLED-laskuri",
+              "Avaa ISO-BMI-laskuri",
+              "Avaa reseptilaskuri",
+              "Avaa TTR-laskuri"
+            ]
+          }
+        ]
+      },
+      "Lomakkeet ja kyselyt": {
+        "description": "Lääkärien usein käyttämiä lomakkeita ja kyselyitä.",
+        "content": [
+          {
+            "type": "table",
+            "commands": [
+              "Avaa AUDIT-kysely",
+              "Avaa astmatesti",
+              "Avaa BDI-kysely",
+              "Avaa CAT-testi",
+              "Avaa C-lausunnon esitietolomake",
+              "Avaa DAN-PSS-kysely",
+              "Avaa GAD-7-kysely",
+              "Avaa GDS-kysely",
+              "Avaa IADL-kysely",
+              "Avaa MADRS-kysely",
+              "Avaa MDQ-kysely",
+              "Avaa PHQ-9-kysely",
+              "Avaa START-kysely"
+            ]
+          }
+        ]
+      },
+      "Terveysportin pikahaut": {
+        "description": "Näillä komennoilla voit hakea Terveysportin sisällöistä nopeasti.",
+        "content": [
+          {
+            "type": "table",
+            "commands": [
+              "Hae Terveysportista",
+              "Hae Lääketietokannasta",
+              "Hae diagnoosia"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "commands": {
+    "Tilastoi puhelu": {
+      "_synonyms": [
+        "Tilastoi hoipuh"
+      ],
+      "kontaktilaji": "4 Puhelu",
+      "vastaanottolaji": "HOIPUH",
+      "_argumentit": [
+        {
+          "task": "KontaktitietojenLisäys",
+          "parameters": {
+            "kontaktilaji": "4",
+            "vastaanottolaji": "HOIPUH"
+          }
+        }
+      ],
+      "_uuid": "9a7577fb-bc2f-4022-98ec-3a96b82930ee"
+    },
+    "Tilastoi konsultaatio": {
+      "kontaktilaji": "9d Konsultaatio",
+      "vastaanottolaji": "LKONS",
+      "_argumentit": [
+        {
+          "task": "KontaktitietojenLisäys",
+          "parameters": {
+            "kontaktilaji": "9d",
+            "vastaanottolaji": "LKONS"
+          }
+        }
+      ],
+      "_uuid": "5bc313a6-b488-4f55-a1a5-31e23696f4ce"
+    },
+    "Tilastoi työtapaturma": {
+      "käyntityyppi": "4 Työtapaturma",
+      "_argumentit": [
+        {
+          "task": "KontaktitietojenLisäys",
+          "parameters": {
+            "käyntityyppi": "4"
+          }
+        }
+      ],
+      "_uuid": "d4bc66b0-1bc0-43f4-89e6-e71b1f1f3263"
+    },
+    "Tilastoi liikennetapaturma": {
+      "käyntityyppi": "5 Liikennetapaturma",
+      "_argumentit": [
+        {
+          "task": "KontaktitietojenLisäys",
+          "parameters": {
+            "käyntityyppi": "5"
+          }
+        }
+      ],
+      "_uuid": "c24704b7-a9a9-48c0-b36c-11bb06d6245d"
+    },
+    "Tilastoi muu": {
+      "kontaktilaji": "9 Muu",
+      "_argumentit": [
+        {
+          "task": "KontaktitietojenLisäys",
+          "parameters": {
+            "kontaktilaji": "9"
+          }
+        }
+      ],
+      "_uuid": "7d3abc72-29ac-415e-9e5a-a7aff1f8210f"
+    },
+    "Tilastoi etävastaanotto": {
+      "kontaktilaji": "9a Sähköinen palvelukanava",
+      "vastaanottolaji": "ETÄVAS",
+      "_argumentit": [
+        {
+          "task": "KontaktitietojenLisäys",
+          "parameters": {
+            "kontaktilaji": "9a",
+            "vastaanottolaji": "ETÄVAS"
+          }
+        }
+      ],
+      "_uuid": "62d827cd-07a1-4ba2-9486-19651886f283"
+    },
+    "Tilastoi tekstiviesti": {
+      "kontaktilaji": "9b Sähköposti",
+      "vastaanottolaji": "LKONS",
+      "_argumentit": [
+        {
+          "task": "KontaktitietojenLisäys",
+          "parameters": {
+            "kontaktilaji": "9b",
+            "vastaanottolaji": "LKONS"
+          }
+        }
+      ],
+      "_uuid": "51daf8de-f936-4b29-be47-fdcb3259124d"
+    },
+    "Tilastoi kiva": {
+      "kontaktilaji": "1 Käynti",
+      "vastaanottolaji": "KIVA",
+      "kiireellisyys": "5 Hoito akuutti- tai kiirevastaanotolla",
+      "_argumentit": [
+        {
+          "task": "KontaktitietojenLisäys",
+          "parameters": {
+            "kontaktilaji": "1",
+            "vastaanottolaji": "KIVA",
+            "kiireellisyys": "5"
+          }
+        }
+      ],
+      "_uuid": "95f524ab-5fb9-43fa-a60d-a3ee922ce132"
+    },
+    "Tilastoi kiirekonsu": {
+      "_synonyms": [
+        "Tilastoi kiireellinen konsu"
+      ],
+      "kontaktilaji": "1 Käynti",
+      "vastaanottolaji": "KONSU",
+      "kiireellisyys": "5 Hoito akuutti- tai kiirevastaanotolla",
+      "_argumentit": [
+        {
+          "task": "KontaktitietojenLisäys",
+          "parameters": {
+            "kontaktilaji": "1",
+            "vastaanottolaji": "KONSU",
+            "kiireellisyys": "5"
+          }
+        }
+      ],
+      "_uuid": "ad96c6ae-bcf3-4be4-a2da-f47f7fdcd42c"
+    },
+    "Tilastoi kiire konsultaatio": {
+      "_synonyms": [
+        "Tilastoi kiireellinen konsultaatio"
+      ],
+      "kontaktilaji": "9d Konsultaatio",
+      "vastaanottolaji": "LKONS",
+      "kiireellisyys": "5 Hoito akuutti- tai kiirevastaanotolla",
+      "_argumentit": [
+        {
+          "task": "KontaktitietojenLisäys",
+          "parameters": {
+            "kontaktilaji": "9d",
+            "vastaanottolaji": "LKONS",
+            "kiireellisyys": "5"
+          }
+        }
+      ],
+      "_uuid": "56a517d8-1313-4c82-bd1d-f613aab36e3d"
+    },
+    "Tilastoi ajokortti": {
+      "_synonyms": [
+        "Tilastoi ajokorttitodistus"
+      ],
+      "laskutus": "Ajokorttitodistus",
+      "_argumentit": [
+        {
+          "task": "LisääLaskutettavaTuote",
+          "parameters": {
+            "tuotteentyyppi": "a",
+            "tuotteentunnus": "AJOKO"
+          }
+        }
+      ],
+      "_uuid": "334e64bf-6571-41ce-9e6d-09a9c87dd2b6"
+    },
+    "Tilastoi B-lausunto": {
+      "_synonyms": [
+        "Tilastoi B-todistus"
+      ],
+      "laskutus": "B-todistus",
+      "_argumentit": [
+        {
+          "task": "LisääLaskutettavaTuote",
+          "parameters": {
+            "tuotteentyyppi": "a",
+            "tuotteentunnus": "B-TOD"
+          }
+        }
+      ],
+      "_uuid": "8b0c3dc7-fa56-4734-afdf-883282a37002"
+    },
+    "Tilastoi C-lausunto": {
+      "_synonyms": [
+        "Tilastoi C-todistus"
+      ],
+      "laskutus": "C-todistus",
+      "_argumentit": [
+        {
+          "task": "LisääLaskutettavaTuote",
+          "parameters": {
+            "tuotteentyyppi": "a",
+            "tuotteentunnus": "C-TOD"
+          }
+        }
+      ],
+      "_uuid": "33b7f3e5-c3c2-4e68-859d-d69214421f92"
+    },
+    "Tilastoi T-lausunto": {
+      "_synonyms": [
+        "Tilastoi T-todistus"
+      ],
+      "laskutus": "T-todistus",
+      "_argumentit": [
+        {
+          "task": "LisääLaskutettavaTuote",
+          "parameters": {
+            "tuotteentyyppi": "a",
+            "tuotteentunnus": "T-TOD"
+          }
+        }
+      ],
+      "_uuid": "d6e0abcc-cef3-4cc8-9965-3622d48d8e88"
+    },
+    "Avaa EKG": {
+      "selite": "Avaa NeaLinkistä viimeisimmät 5 EKG:ta sekä vanhimman EKG:n.",
+      "_argumentit": [
+        {
+          "task": "AvaaNeaLinkEKG",
+          "parameters": {
+            "valitseJaAvaa": "true"
+          }
+        }
+      ],
+      "_uuid": "ebebcac6-19fc-4505-bf23-af40cb75cbba"
+    },
+    "Avaa määräykset": {
+      "selite": "Avaa määräykset.",
+      "_argumentit": [
+        {
+          "task": "PotilaskansionSovellusAvaus",
+          "parameters": {
+            "sovellus": "Määräykset"
+          }
+        }
+      ],
+      "_uuid": "527876e3-f26b-4290-8a63-18e14858256c"
+    },
+    "Avaa hoitokertomus": {
+      "selite": "Avaa viimeisimmän hoitojakson hoitokertomuksen.",
+      "_argumentit": [
+        {
+          "task": "AvaaUusinHoitokertomus",
+          "parameters": {}
+        }
+      ],
+      "_uuid": "634e7016-c9b2-4b88-9b0b-b403788a02d7"
+    },
+    "Luo tekstiviesti": {
+      "_synonyms": [
+        "Lähetä tekstiviesti",
+        "Avaa tekstiviestit"
+      ],
+      "selite": "Avaa Tekstiviesti potilaalle-sovelluksen.",
+      "_argumentit": [
+        {
+          "task": "PotilaskansionSovellusAvaus",
+          "parameters": {
+            "sovellus": "Tekstiviesti potilaalle"
+          }
+        }
+      ],
+      "_uuid": "0aa71e75-f589-4449-ad9c-68ce51fd6183"
+    },
+    "Luo laboratoriolähete": {
+      "selite": "Luo uuden laboratoriolähetteen.",
+      "_argumentit": [
+        {
+          "task": "PotilaskansionSovellusAvaus",
+          "parameters": {
+            "sovellus": "Lab - Lähete"
+          }
+        }
+      ],
+      "_uuid": "ff668f9c-9f67-4967-af02-20107ee1c2f7"
+    },
+    "Luo PAD-lähete": {
+      "selite": "Luo uuden PAD-lähetteen.",
+      "_argumentit": [
+        {
+          "task": "PotilaskansionSovellusAvaus",
+          "parameters": {
+            "sovellus": "Lab - Lähete (Pat)"
+          }
+        }
+      ],
+      "_uuid": "f20cf9d3-c85e-4b70-a24f-bc88ebfe3f30"
+    },
+    "Kopioi henkilötunnus": {
+      "selite": "Kopioi potilaan henkilötunnus leikepöydälle.",
+      "_argumentit": [
+        {
+          "task": "KopioiHenkilötunnus",
+          "parameters": {}
+        }
+      ],
+      "_uuid": "1d26ebbc-f487-43b4-8160-1dfbb111da35"
+    },
+    "Kopioi potilaan ID": {
+      "selite": "Kopioi potilaan ID:n leikepöydälle.",
+      "_argumentit": [
+        {
+          "task": "KopioiPotilaanID",
+          "parameters": {}
+        }
+      ],
+      "_uuid": "32e6fef8-5cbc-4c29-a751-6d495c699023"
+    },
+    "Kopioi lääkelista": {
+      "selite": "Kopioi lääkelistan leikepöydälle tekstinä.",
+      "_argumentit": [
+        {
+          "task": "KopioiLääkitys",
+          "parameters": {
+            "tyyppi": "teksti"
+          }
+        }
+      ],
+      "_uuid": "9de1200d-abcf-458e-bd28-2c24fd873314"
+    },
+    "Kopioi lääketaulukko": {
+      "selite": "Kopioi lääkelistan leikepöydälle taulukkona.",
+      "_argumentit": [
+        {
+          "task": "KopioiLääkitys",
+          "parameters": {
+            "tyyppi": "taulukko"
+          }
+        }
+      ],
+      "_uuid": "2005bbc5-3d38-44e7-9054-85c5cf958fde"
+    },
+    "Liitä lääkelista": {
+      "selite": "Kopioi lääkelistan tekstinä ja liittää kertomustekstiin.",
+      "_argumentit": [
+        {
+          "task": "KopioiJaKirjaaLääkitys",
+          "parameters": {
+            "tyyppi": "teksti"
+          }
+        }
+      ],
+      "_uuid": "dea12ad3-2fae-455f-8829-7bead76749bc"
+    },
+    "Liitä lääketaulukko": {
+      "selite": "Kopioi lääkelistan taulukkona ja liittää kertomustekstiin.",
+      "_argumentit": [
+        {
+          "task": "KopioiJaKirjaaLääkitys",
+          "parameters": {
+            "tyyppi": "taulukko"
+          }
+        }
+      ],
+      "_uuid": "b5c02905-31db-43e6-b2f8-00f4ba86cce8"
+    },
+    "Viesti muistilistalle": {
+      "selite": "Lähetä viesti omalle muistilistalle.",
+      "_argumentit": [
+        {
+          "task": "LifecareViestinLuonti",
+          "parameters": {
+            "tyyppi": "5"
+          }
+        }
+      ],
+      "_uuid": "4f243ee6-82d6-436f-bc7b-a50b6c7fb13a"
+    },
+    "Luo viesti": {
+      "selite": "Luo uuden Lifecare-viestin potilaasta.",
+      "_argumentit": [
+        {
+          "task": "LifecareViestinLuonti",
+          "parameters": {}
+        }
+      ],
+      "_uuid": "e479c673-7c63-4cb0-91ea-baab873935cb"
+    },
+    "Luo määräys": {
+      "selite": "Luo uuden määräyksen.",
+      "_argumentit": [
+        {
+          "task": "LisääMääräys",
+          "parameters": {
+            "teksti": " "
+          }
+        }
+      ],
+      "_uuid": "2d420752-a5ed-4454-85cc-7e4c17eb1870"
+    },
+    "Luo sairaslomatodistus": {
+      "_synonyms": [
+        "Luo SVA"
+      ],
+      "selite": "Luo uuden A-todistuksen.",
+      "_argumentit": [
+        {
+          "task": "LisääLomakeTaiFraasi",
+          "parameters": {
+            "hakutermi": "A-TODI"
+          }
+        }
+      ],
+      "_uuid": "0dce79b2-2bab-43c5-a487-4ef079d871b1"
+    },
+    "Luo B-lausunto": {
+      "selite": "Luo uuden B-todistuksen.",
+      "_argumentit": [
+        {
+          "task": "LisääLomakeTaiFraasi",
+          "parameters": {
+            "hakutermi": "B-LAU"
+          }
+        }
+      ],
+      "_uuid": "55be1f49-b767-45ce-8271-2f277595d043"
+    },
+    "Luo C-lausunto": {
+      "selite": "Luo uuden C-todistuksen.",
+      "_argumentit": [
+        {
+          "task": "LisääLomakeTaiFraasi",
+          "parameters": {
+            "hakutermi": "CLAUSU"
+          }
+        }
+      ],
+      "_uuid": "040edbba-b1ae-4f99-ba5c-93edb97bc01b"
+    },
+    "Luo ajokorttitodistus": {
+      "selite": "Luo uuden AJOKYV-lomakkeen.",
+      "_argumentit": [
+        {
+          "task": "LisääLomakeTaiFraasi",
+          "parameters": {
+            "hakutermi": "AJOKYV"
+          }
+        }
+      ],
+      "_uuid": "fa914d50-9add-4239-8b95-3d5db724bdb3"
+    },
+    "Lähete jalkaterän röntgen": {
+      "selite": "Tutkimuksen koodi: NH3AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NH3AA"
+          }
+        }
+      ],
+      "_uuid": "57de1c99-e30d-42c5-8775-0c24a8e260ff"
+    },
+    "Lähete käden röntgen": {
+      "selite": "Tutkimuksen koodi: ND2AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "ND2AA"
+          }
+        }
+      ],
+      "_uuid": "fde18c81-9972-4b05-9f37-19873fbb5fda"
+    },
+    "Lähete kantapään röntgen": {
+      "selite": "Tutkimuksen koodi: NH2AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NH2AA"
+          }
+        }
+      ],
+      "_uuid": "7c7b0aa9-2fb3-4640-b08a-131f4a9a8bcf"
+    },
+    "Lähete kaularangan röntgen": {
+      "selite": "Tutkimuksen koodi: NA1AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NA1AA"
+          }
+        }
+      ],
+      "_uuid": "1806caba-15c9-45a7-9034-0960db05055d"
+    },
+    "Lähete lannerangan röntgen": {
+      "selite": "Tutkimuksen koodi: NA3AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NA3AA"
+          }
+        }
+      ],
+      "_uuid": "a7e7713b-fd5c-4fea-b9bc-6deffeab68cc"
+    },
+    "Lähete lantion röntgen": {
+      "selite": "Tutkimuksen koodi: NE1AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NE1AA"
+          }
+        }
+      ],
+      "_uuid": "bc0e7bf1-7c2f-4659-b7b9-7539423f51ef"
+    },
+    "Lähete lonkan röntgen": {
+      "selite": "Tutkimuksen koodi: NF1AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NF1AA"
+          }
+        }
+      ],
+      "_uuid": "782110e6-64d6-4f4c-b8e8-e16803ee39e5"
+    },
+    "Lähete luuntiheysmittaus": {
+      "selite": "Tutkimuksen koodi: NK6QA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NK6QA"
+          }
+        }
+      ],
+      "_uuid": "b57a1f8e-9d3e-47a2-a7d6-86ac8acce58c"
+    },
+    "Lähete mammografia": {
+      "selite": "Tutkimuksen koodi: HA1BA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "HA1BA"
+          }
+        }
+      ],
+      "_uuid": "4831ffe4-e86b-4fa2-ae4a-7fd35098fd19"
+    },
+    "Lähete nilkan röntgen": {
+      "selite": "Tutkimuksen koodi: NH1AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NH1AA"
+          }
+        }
+      ],
+      "_uuid": "4b2b64ff-d9cf-4d3e-a245-aa7abb755be8"
+    },
+    "Lähete olkaluun röntgen": {
+      "selite": "Tutkimuksen koodi: NB1BA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NB1BA"
+          }
+        }
+      ],
+      "_uuid": "784ee352-cf2b-40ca-bcf5-39022c581409"
+    },
+    "Lähete olkanivelen röntgen": {
+      "selite": "Tutkimuksen koodi: NB1AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NB1AA"
+          }
+        }
+      ],
+      "_uuid": "31cf760d-4d26-4ab5-af2b-b7293a5d9eaa"
+    },
+    "Lähete polven röntgen": {
+      "selite": "Tutkimuksen koodi: NG1AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NG1AA"
+          }
+        }
+      ],
+      "_uuid": "239ccda5-b410-4c56-956e-a37e10d0dfd7"
+    },
+    "Lähete ranteen röntgen": {
+      "selite": "Tutkimuksen koodi: ND1AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "ND1AA"
+          }
+        }
+      ],
+      "_uuid": "ac4b461b-f77f-49c6-85b5-45c655525c85"
+    },
+    "Lähete rintarangan röntgen": {
+      "selite": "Tutkimuksen koodi: NA2AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "NA2AA"
+          }
+        }
+      ],
+      "_uuid": "943ddfbd-9059-4abe-a408-58f59fd86cfd"
+    },
+    "Lähete thoraxin röntgen": {
+      "selite": "Tutkimuksen koodi: GD1AA",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "GD1AA"
+          }
+        }
+      ],
+      "_uuid": "440d6816-c762-4b65-bd60-252e8a42b6ad"
+    },
+    "Lähete alaraajalaskimoiden ultraääni": {
+      "selite": "Tutkimuksen koodi: PH2AE",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "PH2AE"
+          }
+        }
+      ],
+      "_uuid": "2d4e0e9e-7c80-4bd6-8576-19d70212b705"
+    },
+    "Lähete kaulan ultraääni": {
+      "selite": "Tutkimuksen koodi: EP1AE",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "EP1AE"
+          }
+        }
+      ],
+      "_uuid": "dcdf15fc-4917-46a0-8ed0-149d46211d24"
+    },
+    "Lähete kivespussin ultraääni": {
+      "selite": "Tutkimuksen koodi: KF8AE",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "KF8AE"
+          }
+        }
+      ],
+      "_uuid": "974f4d64-1328-4f1b-8361-68904d028b51"
+    },
+    "Lähete vatsan ultraääni": {
+      "selite": "Tutkimuksen koodi: JN3AE",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "JN3AE"
+          }
+        }
+      ],
+      "_uuid": "85c3f36d-b6ad-4ba1-a116-93d6ede10d78"
+    },
+    "Lähete virtsaelinten ultraääni": {
+      "selite": "Tutkimuksen koodi: KH1AE",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "KH1AE"
+          }
+        }
+      ],
+      "_uuid": "500e5d41-ad1d-4e75-8c0c-0d023341388f"
+    },
+    "Lähete ENMG laaja": {
+      "selite": "Laaja ENMG-tutkimus. Tutkimuksen koodi: 4921",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "4921"
+          }
+        }
+      ],
+      "_uuid": "e2342b60-00f0-4fd5-bd68-eafd8c795b4a"
+    },
+    "Lähete ENMG": {
+      "selite": "Yhden raajan ENMG. Tutkimuksen koodi: 1302",
+      "_argumentit": [
+        {
+          "task": "RöntgenLähetteenKirjaus",
+          "parameters": {
+            "tutkimus": "1302"
+          }
+        }
+      ],
+      "_uuid": "28d659dd-8069-4f5a-9bea-b59f316bec82"
+    },
+    "Hae Terveysportista": {
+      "_fields": [
+        {
+          "type": "string",
+          "label": "hakusana"
+        }
+      ],
+      "selite": "Pikahaku Terveysportin Lääkärin tietokannoista.",
+      "_argumentit": [
+        {
+          "task": "avaaURL",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/apps/dna/ltk/article/empty/search/{q}"
+          }
+        }
+      ],
+      "_uuid": "28e96928-0cef-4aa2-b464-d50cdc7422aa"
+    },
+    "Hae Lääketietokannasta": {
+      "_fields": [
+        {
+          "type": "string",
+          "label": "hakusana"
+        }
+      ],
+      "selite": "Pikahaku Terveysportin Lääketietokannasta.",
+      "_argumentit": [
+        {
+          "task": "avaaURL",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/apps/laake/haku/{q}*"
+          }
+        }
+      ],
+      "_uuid": "ab2deb1d-8496-4ab6-a38c-cd782e532ab2"
+    },
+    "Hae diagnoosia": {
+      "_fields": [
+        {
+          "type": "string",
+          "label": "hakusana"
+        }
+      ],
+      "selite": "Pikahaku Terveysportin ICD-10-tietokannasta.",
+      "_argumentit": [
+        {
+          "task": "avaaURL",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/apps/icd/?query={q}"
+          }
+        }
+      ],
+      "_uuid": "a10aaa64-86c9-41e7-a1c2-5dbd11b3e1a1"
+    },
+    "Avaa AUDIT-kysely": {
+      "selite": "Mittaa alkoholin käyttöön liittyviä riskejä ja ongelmia käyttäjän vastauksien perusteella.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/100.001.html"
+          }
+        }
+      ],
+      "_uuid": "383f9e93-1b42-481f-bbed-3273e22585de"
+    },
+    "Avaa astmatesti": {
+      "selite": "Astman vaikeusasteen arvioinnin oirekysely.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.asthmacontroltest.com/fi-fi/quiz/adult-quiz/"
+          }
+        }
+      ],
+      "_uuid": "7b0c8a29-db3f-410b-8194-9d58025681cf"
+    },
+    "Avaa BDI-kysely": {
+      "selite": "Arvioi masennuksen vakavuutta käyttäjän vastauksien perusteella.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/100.012.html"
+          }
+        }
+      ],
+      "_uuid": "5e27c6bd-3222-4171-a39f-f30419dd45ab"
+    },
+    "Avaa CAT-testi": {
+      "selite": "Arvioi COPD:n oireiden vakavuutta.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.catestonline.org/patient-site-test-page-finnish.html"
+          }
+        }
+      ],
+      "_uuid": "68d51677-6b80-422e-923a-f8f33eaf40b5"
+    },
+    "Avaa DAN-PSS-kysely": {
+      "selite": "Oirekysely soveltuu eturauhasen hyvänlaatuista liikakasvua potevien miesten tunnistamiseen ja hoidon tehon mittaukseen.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/100.045.html"
+          }
+        }
+      ],
+      "_uuid": "259c0ed7-5562-433c-990f-b3d4044b898e"
+    },
+    "Avaa GAD-7-kysely": {
+      "selite": "Arvioi ahdistuksen oireiden vakavuutta.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/GAD7.pdf"
+          }
+        }
+      ],
+      "_uuid": "75b96e80-d5d8-4f7e-a678-3dfc310ec4ff"
+    },
+    "Avaa GDS-kysely": {
+      "selite": "GDS soveltuu parhaiten depression seulontamittariksi vanhuksilla.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/100.008.html"
+          }
+        }
+      ],
+      "_uuid": "c9fb497b-5908-47e3-a52f-18ca14742d9d"
+    },
+    "Avaa MADRS-kysely": {
+      "selite": "Arvioi masennuksen vakavuutta.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/100.042.html"
+          }
+        }
+      ],
+      "_uuid": "dffd6d36-b36c-4461-9710-5d779eab25dd"
+    },
+    "Avaa MDQ-kysely": {
+      "selite": "Arvioi mielialahäiriöiden oireita ja riskiä potilaan vastauksien perusteella.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/100.031.html"
+          }
+        }
+      ],
+      "_uuid": "2b9138c6-b633-4bf8-9ad7-96c170d7f975"
+    },
+    "Avaa PHQ-9-kysely": {
+      "selite": "Arvioi masennusoireiden vakavuutta.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/100.014.html"
+          }
+        }
+      ],
+      "_uuid": "7e99d2b3-fbe3-479d-b2b2-bc0adc08cf23"
+    },
+    "Avaa START-kysely": {
+      "selite": "Arvioi onko selkäkivun pitkittymisen riski vähäinen, keskisuuri vai korkea.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/SBST.pdf"
+          }
+        }
+      ],
+      "_uuid": "c26f8ac3-cf63-4221-826c-54b8d4a6d413"
+    },
+    "Avaa MMSE-testi": {
+      "selite": "Mini-Mental State Examination on lyhyt muistin ja tiedonkäsittelyn arviointiin tarkoitettu testi.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/100.005.html"
+          }
+        }
+      ],
+      "_uuid": "47b12e12-f7e8-462c-87a3-c54cd2dda3da"
+    },
+    "Avaa antibioottilaskuri": {
+      "selite": "Laskee suositellun antibioottiannostuksen diagnoosin ja lapsen painon perusteella.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://antibiootit.fi/"
+          }
+        }
+      ],
+      "_uuid": "f3e19f04-dba6-446b-a370-b712d3e1ce3f"
+    },
+    "Avaa HAS-BLED-laskuri": {
+      "selite": "Arvioi verenvuodon riskiä verenohennuslääkkeitä käyttävällä potilaalla.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/200.027B.html"
+          }
+        }
+      ],
+      "_uuid": "40943f59-7ebc-4c21-96e9-6f3f4d451545"
+    },
+    "Avaa reseptilaskuri": {
+      "selite": "Laskurilla voit laskea mihin asti lääkeresepti riittää. Tietoa voi hyödyntää esimerkiksi PKV-reseptin uusinnassa.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://reseptilaskuri-visus.pages.dev/"
+          }
+        }
+      ],
+      "_uuid": "52b0a035-656d-4349-875b-791f632c0ac6"
+    },
+    "Avaa TTR-laskuri": {
+      "selite": "Laskuri eteisvärinäpotilaiden varfariinihoidon hoitotasapainon arviointiin.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "http://www.gfr.fi/ttr.html"
+          }
+        }
+      ],
+      "_uuid": "bb6df9e5-3068-48b1-b4dd-ed296c2118a4"
+    },
+    "Avaa BMI-laskuri": {
+      "selite": "Laskee käyttäjän painoindeksin pituuden ja painon perusteella.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/apps/dtk/ltk/article/pgr00002"
+          }
+        }
+      ],
+      "_uuid": "b6712d5a-b5c2-45d5-881a-d652a005df7c"
+    },
+    "Avaa IADL-kysely": {
+      "selite": "IADL-kysely mittaa suoriutumista välineellisistä päivittäistoiminnoista. ",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/100.011.html"
+          }
+        }
+      ],
+      "_uuid": "64893360-b083-4117-b4c0-81352b62c931"
+    },
+    "Avaa CHA2DS2-VASc laskuri": {
+      "selite": "Arvioi eteisvärinäpotilaan aivohalvausriskin.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/200.027B.html"
+          }
+        }
+      ],
+      "_uuid": "7d78f5d7-0d34-40bf-b0f7-35bb0a94a448"
+    },
+    "Avaa CIWA-Ar-laskuri": {
+      "selite": "Arvioi alkoholivieroitusoireiden vakavuutta.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/100.007.html"
+          }
+        }
+      ],
+      "_uuid": "7db44ceb-992a-44d3-a766-02065a0e23c7"
+    },
+    "Avaa C-lausunnon esitietolomake": {
+      "selite": "Lomake helpottaa erityisesti iäkkään hoitotuen tarpeen kannalta olennaisten toimintakykyä ja avun tarvetta kuvaavien esitietojen keräämistä.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://forms.ebmedscloud.org/questionnaire/c-esitieto"
+          }
+        }
+      ],
+      "_uuid": "e0a03d9a-562e-4544-b695-4da47e581622"
+    },
+    "Avaa FIB4-laskuri": {
+      "selite": "Laskee maksafibroosin riskin FIB-4-kaavan perusteella laboratorioarvojen avulla.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://forms.ebmedscloud.org/fi-FI/questionnaire/fib-4-index"
+          }
+        }
+      ],
+      "_uuid": "cb1712f4-dec0-4775-b4ec-860daac04eca"
+    },
+    "Avaa FINRISKI-laskuri": {
+      "selite": "Laskee riskin sairastua sydäninfarktiin tai vakavaan aivoverenkiertohäiriöön seuraavan 10 v aikana.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://forms.ebmedscloud.org/fi-FI/questionnaire/finriski"
+          }
+        }
+      ],
+      "_uuid": "e98f8e9c-3391-4d48-a9ff-c507805656c0"
+    },
+    "Avaa FRAX-laskuri": {
+      "selite": "Laskee luuntiheyteen perustuvan murtumatodennäköisyyden 10 seuraavan vuoden ajalle.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://frax.shef.ac.uk/frax/tool.aspx?lang=fi"
+          }
+        }
+      ],
+      "_uuid": "e5bdabb8-26c7-4f4d-90c5-1458ed503269"
+    },
+    "Avaa ISO-BMI-laskuri": {
+      "selite": "Lasten ja nuorten painoindeksin laskuri.",
+      "_argumentit": [
+        {
+          "task": "avaaEdgeApp",
+          "parameters": {
+            "url": "https://www.terveysportti.fi/xmedia/pgr/200.036.html"
+          }
+        }
+      ],
+      "_uuid": "16223a48-5dae-45fc-8a85-7f6fd8978bb6"
+    }
+  }
+}
